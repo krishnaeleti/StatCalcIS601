@@ -44,3 +44,11 @@ class MyTestCase(unittest.TestCase):
             self.assertAlmostEqual(float(row['Result']), self.calculator.divide(row['Value 1'], row['Value 2']))
             self.assertAlmostEqual(float(row['Result']), round(self.calculator.result, 9))
         test_data.clear()
+
+# Testing squared
+    def test_squared(self):
+        test_data = CSVReader('/Tests/Data_Calculator/Unit Test Square.csv').data
+        for row in test_data:
+            self.assertEqual(self.calculator.squared(row['Value 1']), int(row['Result']))
+            self.assertEqual(self.calculator.result, int(row['Result']))
+        test_data.clear()
