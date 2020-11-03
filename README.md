@@ -2,4 +2,4 @@
 # Statistics Calculator - Jiaxing Z and Krishna E
 
 ### Travis Build Status 
-https://travis-ci.com/krishnaeleti/StatCalcIS601.svg?branch=master
+[![Build Status](https://travis-ci.com/krishnaeleti/StatCalcIS601.svg?branch=master)](https://travis-ci.com/krishnaeleti/StatCalcIS601)
